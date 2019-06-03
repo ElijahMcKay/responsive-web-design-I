@@ -1,3 +1,235 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+
+
+body { 
+	width: 1024; 
+    margin: auto; 
+    padding: 75px; 
+}
+/* 
+.wrapper { */
+
+.nav-parent {
+	display: flex;  
+	width: 100%; 
+	justify-content: space-between; 
+	align-items: center; 
+}
+
+@media (max-width: 800px) {
+    .nav-parent {
+        flex-direction: column-reverse; 
+    }
+}
+
+@media (max-width: 500px) {
+
+
+    .nav-child {
+        display: block; 
+    }
+
+    .nav-child a {
+        border-width: 110%; 
+        border-bottom: 1px solid black; 
+    }
+
+}
+
+
+.nav-child {
+	display: flex; 
+    justify-content: space-between;
+    width: 70%; 
+}
+
+@media (max-width: 500) {
+    .nav-child {
+        flex-direction: column; 
+    }
+}
+
+
+nav a {
+	color: lightgray; 
+	text-decoration: none; 
+}
+
+@media (max-width: 800px) {
+    nav a {
+        margin-top: 30px; 
+    }
+}
+
+.header-logo {
+	display: flex; 
+	justify-content: end; 
+}
+
+
+.main-top {
+	width: 100%; 
+	padding-top: 50px; 
+	display: flex; 
+	justify-content: space-evenly;
+}
+
+.main-left { 
+	font-size: 100px; 
+    text-align: center; 
+}
+
+@media (max-width: 800px) {
+    .main-right {
+        display: none; 
+    }
+
+    .main-left {
+        margin: auto; 
+    }
+}
+
+h1 {
+	margin: 0px 0px 0px 0px; 
+	display: flex; 
+}
+
+
+button {
+	background: white; 
+	border: 2px solid black; 
+	color: black; 
+	text-decoration: none; 
+	text-align: center; 
+	font-size: 18px; 
+    padding: 10px 75px;
+	margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    button {
+        padding: 10px 50px; 
+    }
+}
+
+hr {
+	width: 9999px: 
+	color: black; 
+	border: 1px solid black;
+	margin-top: 75px; 
+}
+
+
+h2 {
+	font-weight: 600;
+}
+
+.wrapper {
+	font-size: 24px;
+	margin-top: 50px; 
+	display: flex; 
+	justify-content: space-between;
+}
+
+.middle-left {
+	width: 500px; 
+	display: flex; 
+	flex-direction: column; 
+}
+
+.middle-right {
+	width: 500px; 
+	display: flex; 
+	flex-direction: column;
+}
+
+.middle-img {
+	width: 100%; 
+	margin: 50px 0px;  
+}
+
+.wrapper p {
+	font-size: 20px; 
+}
+
+.bottom-wrapper {
+	display: flex; 
+	flex-direction: row; 
+	justify-content: space-evenly;  
+	width: 100%; 
+} 
+
+.bottom-left {
+	font-size: 24px; 
+	margin: 0px 10px; 
+}
+
+.bottom-middle {
+	font-size: 24px; 
+	margin: 0px 10px; 
+}
+
+.bottom-right {
+	font-size: 24px;
+	margin: 0px 10px; 
+}
+
+footer {
+	margin-top: 50px; 
+}
+
+.copy {
+	text-align: center; 
+}
 
