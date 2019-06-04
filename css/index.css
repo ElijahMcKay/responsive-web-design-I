@@ -215,7 +215,8 @@ nav a {
 	}
 	nav a {
 		border-bottom: 1px solid darkgray;
-		border-width: 100%; 
+		width: 100%; 
+		text-align: center; 
 	}
 	.header-img {
 		margin: 30px auto 0px auto; 
@@ -228,15 +229,15 @@ nav a {
 .main-top {
 	display: flex; 
 	justify-content: space-evenly; 
-	margin: 75px auto 75px auto; 
+	margin: 75px auto; 
 }
 
 .main-left {
 	width: 50%; 
 	font-size: 75px; 
-	text-align: center; 
-	align-content: center; 
-	margin: 50px 0px 0px 100px; 
+	text-align: center;
+	/* margin: 50px 0px 0px 100px;  */
+	white-space: pre-line;
 }
 
 .main-left button {
@@ -274,7 +275,7 @@ hr {
 
 @media (max-width: 500px) {
 	.main-left {
-		margin: 0px; 
+		width: 100%; 
 	}
 }
 
